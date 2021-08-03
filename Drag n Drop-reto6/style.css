@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  
+}
+[draggable] {
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+
+body {
+  width: 98vw;
+  height: 97vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(64, 117, 214);
+  position: absolute;
+}
+
+.empty {
+  margin: 0 10px;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: solid 2px black;
+  overflow: hidden;
+  box-shadow: -1px -1px 5px rgb(66, 66, 66);
+}
+
+.fill {
+  background-image: url(img/imagen.jpg);
+  background-size: 100px;
+  height: 100px;
+  width: 100px;
+}
+
+/* .hold {
+  border: ;
+} */
+
+.hovered{
+  border: dashed 1px white;
+  background-color: black;
+}
+
+@media (max-width: 800px) {
+}
