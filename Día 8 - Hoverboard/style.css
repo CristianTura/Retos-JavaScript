@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-row: auto;
+    column-gap: 3px;
+    row-gap: 3px;
+    width: auto;
+  }
+  
+  .square {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #161616;
+    transition-duration: 2s;
+  }
+  
+  .square:hover {
+    transition-duration: 0s;
+  }
